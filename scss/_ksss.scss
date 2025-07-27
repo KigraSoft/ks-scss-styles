@@ -1,0 +1,124 @@
+// KigraSoft SCSS Styles (KSSS)
+//
+// Version 0.4 - 2025-07-23
+//
+// _ksss.scss
+//
+// KSSS is a standard base SCSS config being used across the
+// Kigra Enterprise websites.
+//
+// Version 0.4 represents a shift from using a Hugo based website
+// structure to Emacs Org Mode generated website
+//
+@use "ksss-reset";
+@use "ksss-theme" as theme;
+
+:root {
+    color-scheme: light dark;
+}
+
+* {
+    background-color: theme.$bkg-color;
+    color:            theme.$txt-color;
+    font-family:      theme.$txt-font;
+}
+
+html {
+    background: theme.$bkg-color;
+    color:      theme.$txt-color;
+    font-size:  100%;
+}
+
+body {
+    width:     theme.$body-width;
+    min-width: theme.$body-min-width;
+    max-width: theme.$body-max-width;
+    margin:    theme.$body-margin;
+
+    h1 {
+        font-size:   theme.$hdg1-txt-size;
+        font-weight: theme.$hdg1-txt-wght;
+        text-align:  theme.$hdg1-txt-algn;
+        margin:      theme.$hdg1-txt-mrgn;
+        background:  theme.$hdg1-bkg-color;
+        color:       theme.$hdg1-txt-color;
+    }
+
+    h2 {
+        font-size:   theme.$hdg2-txt-size;
+        font-weight: theme.$hdg2-txt-wght;
+        text-align:  theme.$hdg2-txt-algn;
+        margin:      theme.$hdg2-txt-mrgn;
+        background:  theme.$hdg2-bkg-color;
+        color:       theme.$hdg2-txt-color;
+    }
+
+    h3 {
+        font-size:   theme.$hdg3-txt-size;
+        font-weight: theme.$hdg3-txt-wght;
+        text-align:  theme.$hdg3-txt-algn;
+        margin:      theme.$hdg3-txt-mrgn;
+        background:  theme.$hdg3-bkg-color;
+        color:       theme.$hdg3-txt-color;
+    }
+
+    h4 {
+        font-size:   theme.$hdg4-txt-size;
+        font-weight: theme.$hdg4-txt-wght;
+        text-align:  theme.$hdg4-txt-algn;
+        margin:      theme.$hdg4-txt-mrgn;
+        background:  theme.$hdg4-bkg-color;
+        color:       theme.$hdg4-txt-color;
+    }
+
+    h5 {
+        font-size:   theme.$hdg5-txt-size;
+        font-weight: theme.$hdg5-txt-wght;
+        text-align:  theme.$hdg5-txt-algn;
+        margin:      theme.$hdg5-txt-mrgn;
+        background:  theme.$hdg5-bkg-color;
+        color:       theme.$hdg5-txt-color;
+    }
+
+    h6 {
+        font-size:   theme.$hdg6-txt-size;
+        font-weight: theme.$hdg6-txt-wght;
+        text-align:  theme.$hdg6-txt-algn;
+        margin:      theme.$hdg6-txt-mrgn;
+        background:  theme.$hdg6-bkg-color;
+        color:       theme.$hdg6-txt-color;
+    }
+}
+
+p, a {
+    text-decoration: none;
+    font-family:     theme.$site-txt-font;
+}
+
+pre {
+    margin:           1.0em 1.0em;
+    padding:          1.0em 1.0em;
+    background-color: theme.$pre-color;
+    color:            theme.$cde-color;
+
+    //    .src {}
+    //    .src-emacs-lisp {}
+    .org-rainbow-delimiters-depth-1 { color: red; }
+    .org-rainbow-delimiters-depth-2 { color: blue; }
+    .org-keyword { color: green;}
+    .org-function-name { color: violet; }
+    .org-string { color: black; }
+}
+
+ul {
+    list-style-type:      disc;
+    padding-inline-start: 3em;
+    counter-reset:        list-item;
+}
+
+li {
+    display:    list-item;
+    text-align: match-parent;
+    margin:     0.5em 0;
+}
+

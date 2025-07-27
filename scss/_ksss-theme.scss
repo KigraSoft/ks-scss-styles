@@ -1,0 +1,200 @@
+// KigraSoft SCSS Styles (KSSS)
+//
+// Version 0.4 - 2025-07-23
+//
+// _ksss-theme-default.scss
+//
+// KSSS is a standard base SCSS config being used across the
+// Kigra Enterprise websites.
+//
+// Version 0.4 represents a shift from using a Hugo based website
+// structure to Emacs Org Mode generated website
+//
+
+// Initial Defaults
+//
+// Initial Layout Defaults
+$body-width: 90%;
+$body-min-width: 20em;
+$body-max-width: 50em;
+$body-margin: 2em auto;
+
+// Initial Default Font & Color
+$light-bkg-color: ivory !default;
+$light-txt-color: black !default;
+$light-pre-color: white !default;
+$light-cde-color: green !default;
+$dark--bkg-color: dimgray !default;
+$dark--txt-color: white !default;
+$dark--pre-color: black !default;
+$dark--cde-color: yellow !default;
+
+$bkg-color: light-dark($light-bkg-color, $dark--bkg-color) !default;
+$txt-color: light-dark($light-txt-color, $dark--txt-color) !default;
+$pre-color: light-dark($light-pre-color, $dark--pre-color) !default;
+$cde-color: light-dark($light-cde-color, $dark--cde-color) !default;
+
+$txt-font:  "Noto Serif", George, Times, serif !default;
+$txt-size: 12pt !default;
+$txt-wght: normal !default;
+$txt-algn: left !default;
+$txt-mrgn: 1em !default;
+
+// COLORS FOR EACH SECTION AND ELEMENT
+//
+// Background colors
+$site-bkg-color: $bkg-color !default;
+$hdr--bkg-color: $bkg-color !default;
+$main-bkg-color: $bkg-color !default;
+$artl-bkg-color: $bkg-color !default;
+$asde-bkg-color: $bkg-color !default;
+$ftr--bkg-color: $bkg-color !default;
+
+$hdg1-bkg-color: $bkg-color !default;
+$hdg2-bkg-color: $bkg-color !default;
+$hdg3-bkg-color: $bkg-color !default;
+$hdg4-bkg-color: $bkg-color !default;
+$hdg5-bkg-color: $bkg-color !default;
+$hdg6-bkg-color: $bkg-color !default;
+
+// Font colors
+$site-txt-color: $txt-color !default;
+$hdr--txt-color: $txt-color !default;
+$main-txt-color: $txt-color !default;
+$artl-txt-color: $txt-color !default;
+$asde-txt-color: $txt-color !default;
+$ftr--txt-color: $txt-color !default;
+
+$hdg1-txt-color: $txt-color !default;
+$hdg2-txt-color: $txt-color !default;
+$hdg3-txt-color: $txt-color !default;
+$hdg4-txt-color: $txt-color !default;
+$hdg5-txt-color: $txt-color !default;
+$hdg6-txt-color: $txt-color !default;
+                                                          
+// FONTS
+//
+// Font Family Defaults
+$site-txt-font: $txt-font !default;
+$hdr--txt-font: $txt-font !default;
+$main-txt-font: $txt-font !default;
+$artl-txt-font: $txt-font !default;
+$asde-txt-font: $txt-font !default;
+$ftr--txt-font: $txt-font !default;
+
+$hdg1-txt-font: $txt-font !default;
+$hdg2-txt-font: $txt-font !default;
+$hdg3-txt-font: $txt-font !default;
+$hdg4-txt-font: $txt-font !default;
+$hdg5-txt-font: $txt-font !default;
+$hdg6-txt-font: $txt-font !default;
+
+// Font Size Defaults
+$site-txt-size: $txt-size !default;
+$hdr--txt-size: $txt-size !default;
+$main-txt-size: $txt-size !default;
+$artl-txt-size: $txt-size !default;
+$asde-txt-size: $txt-size !default;
+$ftr--txt-size: $txt-size !default;
+
+$hdg1-txt-size: 2em !default;
+$hdg2-txt-size: $txt-size !default;
+$hdg3-txt-size: $txt-size !default;
+$hdg4-txt-size: $txt-size !default;
+$hdg5-txt-size: $txt-size !default;
+$hdg6-txt-size: $txt-size !default;
+
+// Font Weight Defaults
+$site-txt-wght: $txt-wght !default;
+$hdr--txt-wght: $txt-wght !default;
+$main-txt-wght: $txt-wght !default;
+$artl-txt-wght: $txt-wght !default;
+$asde-txt-wght: $txt-wght !default;
+$ftr--txt-wght: $txt-wght !default;
+
+$hdg1-txt-wght: bold !default;
+$hdg2-txt-wght: $txt-wght !default;
+$hdg3-txt-wght: $txt-wght !default;
+$hdg4-txt-wght: $txt-wght !default;
+$hdg5-txt-wght: $txt-wght !default;
+$hdg6-txt-wght: $txt-wght !default;
+
+// Text-Align Defaults
+$site-txt-algn: $txt-algn !default;
+$hdr--txt-algn: $txt-algn !default;
+$main-txt-algn: $txt-algn !default;
+$artl-txt-algn: $txt-algn !default;
+$asde-txt-algn: $txt-algn !default;
+$ftr--txt-algn: $txt-algn !default;
+
+$hdg1-txt-algn: center !default;
+$hdg2-txt-algn: $txt-algn !default;
+$hdg3-txt-algn: $txt-algn !default;
+$hdg4-txt-algn: $txt-algn !default;
+$hdg5-txt-algn: $txt-algn !default;
+$hdg6-txt-algn: $txt-algn !default;
+
+// Margin Defaults
+$site-txt-mrgn: $txt-mrgn !default;
+$hdr--txt-mrgn: $txt-mrgn !default;
+$main-txt-mrgn: $txt-mrgn !default;
+$artl-txt-mrgn: $txt-mrgn !default;
+$asde-txt-mrgn: $txt-mrgn !default;
+$ftr--txt-mrgn: $txt-mrgn !default;
+
+$hdg1-txt-mrgn: $txt-mrgn !default;
+$hdg2-txt-mrgn: $txt-mrgn !default;
+$hdg3-txt-mrgn: $txt-mrgn !default;
+$hdg4-txt-mrgn: $txt-mrgn !default;
+$hdg5-txt-mrgn: $txt-mrgn !default;
+$hdg6-txt-mrgn: $txt-mrgn !default;
+
+// setup font defaults
+
+$font-stack-serif: Times, "Times New Roman", Georgia, serif !default;
+$font-stack-sans:  Verdana, Arial, Helvetica, sans-serif !default;
+$font-stack-mono:  "Lucida Console", Courier, monospace !default;
+$font-stack-logo: $font-stack-mono !default;
+
+//??
+$font-base-font-stack: $font-stack-serif;
+
+$font-color: #0a0;
+$font-base-txt-color: #0a0;
+$font-base-txt-size: 100%;
+$font-hdg-color: #0aa !default;
+
+// ***************************************
+
+// dep
+//$site-main-bg-clr: #222;
+$bg-clr: #222 !default;
+
+$sz-min: 4px !default;
+$sz-max: 8px !default;
+$vw-min: 500px !default;
+$vw-max: 1200px !default;
+$bdr-width: 0.2ch !default;
+
+$main-width: 70ch !default;
+
+$site-main-width-min: 350px !default;
+$site-main-width-tgt: 80svw !default;
+$site-main-width-max: 1200px !default;
+$main-padding:   2vw !default;
+
+$site-hdg-width-min: 350px !default;
+$site-hdg-width-tgt: 90svw !default;
+$site-hdg-width-max: 1200px !default;
+$site-hdg-padding:   2vw !default;
+
+$hdg-1-font-size: 2.0rem !default;
+$hdg-2-font-size: 1.5rem !default;
+$hdg-3-font-size: 1.2rem !default;
+$hdg-4-font-size: 1.1rem !default;
+$hdg-5-font-size: 1.1rem !default;
+$hdg-6-font-size: 1.1rem !default;
+
+$hdg-e-font-color: #0aa !default;
+$hdg-o-font-color: #ff5 !default;
+

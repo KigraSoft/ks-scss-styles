@@ -1,0 +1,24 @@
+#+title:      KigraSoft
+
+Welcome.
+
+* Posts
+
+- [[file:post-3.org][Post #3]]
+- [[file:post-2.org][Post #2]]
+- [[file:post-1.org][Post #1]]
+
+* Articles
+
+- [[file:post-3.org][Post #3]]
+- [[file:post-2.org][Post #2]]
+- [[file:post-1.org][Post #1]]
+
+
+
+
+
+
+
+
+

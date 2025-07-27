@@ -1,0 +1,10 @@
+// style3.css
+// SCSS stylesheet for KigraSoft.com
+// Using KigraSoft SCSS Styles (KSSS)
+
+@use "ksss-theme-ks" with (
+    $hdg6-bkg-color: blue,
+);
+
+@use "ksss";
+
