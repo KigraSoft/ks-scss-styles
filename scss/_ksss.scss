@@ -35,10 +35,14 @@ body {
     max-width: theme.$body-max-width;
     margin:    theme.$body-margin;
 
-    div#content {
-        border-top: double;
-        border-bottom: double;
+    div#preamble {
         padding: 1vw 0;
+    };
+    
+    div#content {
+        border-top:    double;
+        border-bottom: double;
+        padding:       1vw 0;
     }
 
     div#postamble {
@@ -101,10 +105,16 @@ body {
 }
 
 p, a {
-    text-decoration: none;
+    text-decoration: theme.$par-txt-decoration;
     font-family:     theme.$site-txt-font;
+    margin:          theme.$par-margin;
+    padding:         theme.$par-padding;
 }
 
+a {
+    text-decoration: theme.$a-txt-decoration;
+    font-family:     theme.$site-txt-font;
+}
 pre {
     margin:           1.0em 1.0em;
     padding:          1.0em 1.0em;

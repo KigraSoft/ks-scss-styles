@@ -14,10 +14,10 @@
 // Initial Defaults
 //
 // Initial Layout Defaults
-$body-width: 90%;
+$body-width:     90%;
 $body-min-width: 20em;
 $body-max-width: 50em;
-$body-margin: 2em auto;
+$body-margin:    2em auto;
 
 // Initial Default Font & Color
 $light-bkg-color: ivory !default;
@@ -34,7 +34,13 @@ $txt-color: light-dark($light-txt-color, $dark--txt-color) !default;
 $pre-color: light-dark($light-pre-color, $dark--pre-color) !default;
 $cde-color: light-dark($light-cde-color, $dark--cde-color) !default;
 
-$txt-font:  "Noto Serif", George, Times, serif !default;
+// Font defaults
+$font-stack-serif: "Noto Serif", "Times New Roman", Georgia, serif !default;
+$font-stack-sans:  Verdana, Arial, Helvetica, sans-serif !default;
+$font-stack-mono:  "Lucida Console", Courier, monospace !default;
+
+// TXT defaults
+$txt-font: $font-stack-serif !default;
 $txt-size: 12pt !default;
 $txt-wght: normal !default;
 $txt-algn: left !default;
@@ -97,12 +103,12 @@ $artl-txt-size: $txt-size !default;
 $asde-txt-size: $txt-size !default;
 $ftr--txt-size: $txt-size !default;
 
-$hdg1-txt-size: 2em !default;
-$hdg2-txt-size: $txt-size !default;
-$hdg3-txt-size: $txt-size !default;
-$hdg4-txt-size: $txt-size !default;
-$hdg5-txt-size: $txt-size !default;
-$hdg6-txt-size: $txt-size !default;
+$hdg1-txt-size: 2.0rem !default;
+$hdg2-txt-size: 1.5rem !default;
+$hdg3-txt-size: 1.2rem !default;
+$hdg4-txt-size: 1.1rem !default;
+$hdg5-txt-size: 1.0rem !default;
+$hdg6-txt-size: 1.0rem !default;
 
 // Font Weight Defaults
 $site-txt-wght: $txt-wght !default;
@@ -149,20 +155,16 @@ $hdg4-txt-mrgn: $txt-mrgn !default;
 $hdg5-txt-mrgn: $txt-mrgn !default;
 $hdg6-txt-mrgn: $txt-mrgn !default;
 
-// setup font defaults
+// p, pre defaults
+$par-txt-decoration: none;
+$par-margin:  1vw;
+$par-padding: 1vw;
+$par-txt-decoration: none;
+$par-margin:  1.0em;
+$par-padding: 1.0em;
 
-$font-stack-serif: Times, "Times New Roman", Georgia, serif !default;
-$font-stack-sans:  Verdana, Arial, Helvetica, sans-serif !default;
-$font-stack-mono:  "Lucida Console", Courier, monospace !default;
-$font-stack-logo: $font-stack-mono !default;
-
-//??
-$font-base-font-stack: $font-stack-serif;
-
-$font-color: #0a0;
-$font-base-txt-color: #0a0;
-$font-base-txt-size: 100%;
-$font-hdg-color: #0aa !default;
+// a defaults
+$a-txt-decoration: underline;
 
 // ***************************************
 
@@ -187,14 +189,4 @@ $site-hdg-width-min: 350px !default;
 $site-hdg-width-tgt: 90svw !default;
 $site-hdg-width-max: 1200px !default;
 $site-hdg-padding:   2vw !default;
-
-$hdg-1-font-size: 2.0rem !default;
-$hdg-2-font-size: 1.5rem !default;
-$hdg-3-font-size: 1.2rem !default;
-$hdg-4-font-size: 1.1rem !default;
-$hdg-5-font-size: 1.1rem !default;
-$hdg-6-font-size: 1.1rem !default;
-
-$hdg-e-font-color: #0aa !default;
-$hdg-o-font-color: #ff5 !default;
 
