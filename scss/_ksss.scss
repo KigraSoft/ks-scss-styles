@@ -36,7 +36,21 @@ body {
     margin:    theme.$body-margin;
 
     div#preamble {
-        padding: 1vw 0;
+        padding: 1rem 0;
+
+        nav {
+            display: flex;
+
+            li {
+                flex: auto;
+                display:    inline;
+                text-align: center;
+                margin:     0 0;
+                //border-left: solid;
+                border-right: solid;
+                padding: 0 1rem;
+            }
+        }
     };
     
     div#content {
@@ -104,7 +118,7 @@ body {
     }
 }
 
-p, a {
+p {
     text-decoration: theme.$par-txt-decoration;
     font-family:     theme.$site-txt-font;
     margin:          theme.$par-margin;
@@ -115,6 +129,7 @@ a {
     text-decoration: theme.$a-txt-decoration;
     font-family:     theme.$site-txt-font;
 }
+
 pre {
     margin:           1.0em 1.0em;
     padding:          1.0em 1.0em;
