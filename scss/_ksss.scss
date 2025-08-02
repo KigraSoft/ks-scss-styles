@@ -35,6 +35,16 @@ body {
     max-width: theme.$body-max-width;
     margin:    theme.$body-margin;
 
+    div#content {
+        border-top: double;
+        border-bottom: double;
+        padding: 1vw 0;
+    }
+
+    div#postamble {
+        padding: 1vw 0;
+    };
+    
     h1 {
         font-size:   theme.$hdg1-txt-size;
         font-weight: theme.$hdg1-txt-wght;
