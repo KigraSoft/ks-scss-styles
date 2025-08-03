@@ -133,8 +133,9 @@ a {
 pre {
     margin:           1.0em 1.0em;
     padding:          1.0em 1.0em;
-    background-color: theme.$pre-color;
-    color:            theme.$cde-color;
+    //background-color: theme.$pre-color;
+    //color:            theme.$cde-color;
+    border: 1.0rem solid gray;
 
     //    .src {}
     //    .src-emacs-lisp {}
