@@ -1,7 +1,5 @@
 @use 'ksss-theme-ks-cga' as cga;
 @forward 'ksss-theme' with (
-//    $txt-color: black !default,
-//    $txt-font: ksss-theme.$font-stack-mono,
     $light-bkg-color: cga.$ks-clr-cga15-white,
     $light-txt-color: cga.$ks-clr-cga00-black,
     $light-pre-color: cga.$ks-clr-cga07-ltgray,
@@ -10,4 +8,6 @@
     $dark--txt-color: cga.$ks-clr-cga02-green,
     $dark--pre-color: cga.$ks-clr-cga08-dkgray,
     $dark--cde-color: cga.$ks-clr-cga15-white,
+
+    $txt-font: monospace!default,
 );
