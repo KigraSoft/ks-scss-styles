@@ -38,17 +38,37 @@ body {
     div#preamble {
         padding: 1rem 0;
 
-        nav {
-            display: flex;
+        header {
+            .site-title {
+                font-size:   theme.$titl-txt-size;
+                font-weight: theme.$titl-txt-wght;
+                font-family: theme.$titl-txt-font;
+                text-align:  theme.$titl-txt-algn;
+                margin:      theme.$titl-txt-mrgn;
+                background:  theme.$titl-bkg-color;
+                color:       theme.$titl-txt-color;
+            }
+            .site-subtitle {
+                font-size:   theme.$subt-txt-size;
+                font-weight: theme.$subt-txt-wght;
+                font-family: theme.$subt-txt-font;
+                text-align:  theme.$subt-txt-algn;
+                margin:      theme.$subt-txt-mrgn;
+                background:  theme.$subt-bkg-color;
+                color:       theme.$subt-txt-color;
+            }
+            nav {
+                display: flex;
 
-            li {
-                flex: auto;
-                display:    inline;
-                text-align: center;
-                margin:     0 0;
-                //border-left: solid;
-                border-right: solid;
-                padding: 0 1rem;
+                li {
+                    flex: auto;
+                    display:    inline;
+                    text-align: center;
+                    margin:     0 0;
+                    //border-left: solid;
+                    border-right: solid;
+                    padding: 0 1rem;
+                }
             }
         }
     };
